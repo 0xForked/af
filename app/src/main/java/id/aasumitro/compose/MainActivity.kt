@@ -3,37 +3,16 @@ package id.aasumitro.compose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.ui.Modifier
-import id.aasumitro.compose.ui.theme.LearnComposeTheme
-import androidx.compose.foundation.layout.fillMaxSize
-import id.aasumitro.compose.example.SuperheroesApp
-import id.aasumitro.compose.example.WoofApp
-import id.aasumitro.compose.example.superhero.SuperheroesTheme
-import id.aasumitro.compose.example.unscramble.GameScreen
-import id.aasumitro.compose.example.unscramble.UnscrambleTheme
-import id.aasumitro.compose.example.woof.WoofTheme
+import id.aasumitro.compose.example.CupcakeApp
+import id.aasumitro.compose.example.cupcake.CupcakeTheme
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // LearnComposeTheme {
-            //    Surface(
-            //        modifier = Modifier.fillMaxSize(),
-            //        color = MaterialTheme.colorScheme.background
-            //    ) {}
-            // }
-            UnscrambleTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    GameScreen()
-                }
+            CupcakeTheme {
+                CupcakeApp()
             }
         }
     }

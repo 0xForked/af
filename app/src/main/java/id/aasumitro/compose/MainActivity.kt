@@ -6,8 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.material3.Surface
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
-import id.aasumitro.compose.example.reply.ReplyApp
+import id.aasumitro.compose.example.ReplyApp
+import id.aasumitro.compose.example.SportsApp
 import id.aasumitro.compose.example.reply.ReplyTheme
+import id.aasumitro.compose.example.sport.SportsTheme
 
 
 class MainActivity : ComponentActivity() {
@@ -15,11 +17,12 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ReplyTheme {
+            SportsTheme {
                 Surface {
                     val windowSize = calculateWindowSizeClass(this)
-                    ReplyApp(
+                    SportsApp(
                         windowSize = windowSize.widthSizeClass,
+                        onBackPressed = { finish() }
                     )
                 }
             }

@@ -1,4 +1,4 @@
-package id.aasumitro.compose.example.reply
+package id.aasumitro.compose.example
 
 import androidx.compose.material3.Surface
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
@@ -7,6 +7,13 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import id.aasumitro.compose.example.reply.Email
+import id.aasumitro.compose.example.reply.MailboxType
+import id.aasumitro.compose.example.reply.ReplyContentType
+import id.aasumitro.compose.example.reply.ReplyHomeScreen
+import id.aasumitro.compose.example.reply.ReplyNavigationType
+import id.aasumitro.compose.example.reply.ReplyTheme
+import id.aasumitro.compose.example.reply.ReplyViewModel
 
 @Composable
 fun ReplyApp(

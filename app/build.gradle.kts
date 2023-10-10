@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.material.icon.extended)
     implementation(libs.navigation.compose)
+    implementation("androidx.compose.material3:material3-window-size-class")
 
     testImplementation(libs.junit)
 
